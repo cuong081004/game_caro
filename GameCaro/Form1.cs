@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,7 +19,33 @@ namespace GameCaro
         {
             InitializeComponent();
             ChessBroad = new ChessBroadManager(pnlChessBroad, txbPlayerName, ptcbMark);
+            ChessBroad.EndedGame += ChessBroad_EndedGame;
+            ChessBroad.PlayerMarked += ChessBroad_PlayerMarked;
+            
+            prcbCoolDown.Step = Cons.COOL_DOWN_STEP;
+            prcbCoolDown.Maximum = Cons.COOL_DOWN_TIME;
+            prcbCoolDown.Value = 0;
+            
+            tmCoolDown.Interval = Cons.COOL_DOWN_INTERVAL;
+            
             ChessBroad.DrawChessBoard();
+        }
+
+        void EndGame()
+        {
+            tmCoolDown.Stop();
+            pnlChessBroad.Enabled = false;
+            MessageBox.Show("Kết thúc!");
+        }
+        private void ChessBroad_PlayerMarked(object? sender, EventArgs e)
+        {
+            tmCoolDown.Start();
+            prcbCoolDown.Value = 0;
+        }
+
+        private void ChessBroad_EndedGame(object? sender, EventArgs e)
+        {
+            EndGame();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -35,6 +61,21 @@ namespace GameCaro
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void prcbCoolDown_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tmCoolDown_Tick(object sender, EventArgs e)
+        {
+            prcbCoolDown.PerformStep();
+
+            if (prcbCoolDown.Value >= prcbCoolDown.Maximum)
+            {
+                EndGame();
+            }
         }
     }
 }

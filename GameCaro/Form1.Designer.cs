@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             pnlChessBroad = new Panel();
             panel2 = new Panel();
@@ -39,6 +40,7 @@
             txbIP = new TextBox();
             prcbCoolDown = new ProgressBar();
             txbPlayerName = new TextBox();
+            tmCoolDown = new System.Windows.Forms.Timer(components);
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ptcbAvatar).BeginInit();
             panel3.SuspendLayout();
@@ -133,6 +135,7 @@
             prcbCoolDown.Name = "prcbCoolDown";
             prcbCoolDown.Size = new Size(174, 27);
             prcbCoolDown.TabIndex = 1;
+            prcbCoolDown.Click += prcbCoolDown_Click;
             // 
             // txbPlayerName
             // 
@@ -141,6 +144,10 @@
             txbPlayerName.ReadOnly = true;
             txbPlayerName.Size = new Size(174, 27);
             txbPlayerName.TabIndex = 0;
+            // 
+            // tmCoolDown
+            // 
+            tmCoolDown.Tick += tmCoolDown_Tick;
             // 
             // Form1
             // 
@@ -173,5 +180,6 @@
         private PictureBox ptcbMark;
         private Label label1;
         private Button btnLAN;
+        private System.Windows.Forms.Timer tmCoolDown;
     }
 }
