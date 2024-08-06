@@ -83,18 +83,19 @@
             panel3.Controls.Add(txbPlayerName);
             panel3.Location = new Point(723, 347);
             panel3.Name = "panel3";
-            panel3.Size = new Size(337, 355);
+            panel3.Size = new Size(337, 269);
             panel3.TabIndex = 2;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Times New Roman", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(9, 241);
+            label1.Location = new Point(9, 179);
             label1.Name = "label1";
             label1.Size = new Size(325, 51);
             label1.TabIndex = 5;
             label1.Text = "5 in a line to win";
+            label1.Click += label1_Click;
             // 
             // btnLAN
             // 
@@ -108,11 +109,15 @@
             // 
             // ptcbMark
             // 
+            ptcbMark.BackColor = SystemColors.HighlightText;
+            ptcbMark.BorderStyle = BorderStyle.Fixed3D;
             ptcbMark.Location = new Point(184, 5);
             ptcbMark.Name = "ptcbMark";
-            ptcbMark.Size = new Size(150, 179);
+            ptcbMark.Size = new Size(150, 127);
+            ptcbMark.SizeMode = PictureBoxSizeMode.StretchImage;
             ptcbMark.TabIndex = 3;
             ptcbMark.TabStop = false;
+            ptcbMark.Click += ptcbMark_Click;
             // 
             // txbIP
             // 
