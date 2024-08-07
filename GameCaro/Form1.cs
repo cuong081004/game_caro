@@ -21,21 +21,39 @@ namespace GameCaro
             ChessBroad = new ChessBroadManager(pnlChessBroad, txbPlayerName, ptcbMark);
             ChessBroad.EndedGame += ChessBroad_EndedGame;
             ChessBroad.PlayerMarked += ChessBroad_PlayerMarked;
-            
+
             prcbCoolDown.Step = Cons.COOL_DOWN_STEP;
             prcbCoolDown.Maximum = Cons.COOL_DOWN_TIME;
             prcbCoolDown.Value = 0;
-            
-            tmCoolDown.Interval = Cons.COOL_DOWN_INTERVAL;
-            
-            ChessBroad.DrawChessBoard();
-        }
 
+            tmCoolDown.Interval = Cons.COOL_DOWN_INTERVAL;
+
+            NewGame();
+        }
+        #region Methods
         void EndGame()
         {
             tmCoolDown.Stop();
             pnlChessBroad.Enabled = false;
             MessageBox.Show("Kết thúc!");
+        }
+
+        void NewGame()
+        {
+            prcbCoolDown.Value = 0;
+            tmCoolDown.Stop();
+
+            ChessBroad.DrawChessBoard();
+        }
+
+        void Quit()
+        {
+                Application.Exit();
+        }
+
+        void Undo()
+        {
+
         }
         private void ChessBroad_PlayerMarked(object? sender, EventArgs e)
         {
@@ -56,5 +74,27 @@ namespace GameCaro
                 EndGame();
             }
         }
+
+        private void newGameToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NewGame();
+        }
+
+        private void undoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Undo();
+        }
+
+        private void quitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Quit();
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Bạn có chắc muốn thoát!!", "Thông báo", MessageBoxButtons.OKCancel) != DialogResult.OK)
+                e.Cancel = true;
+        }
+        #endregion
     }
 }
