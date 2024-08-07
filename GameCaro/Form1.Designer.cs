@@ -58,7 +58,7 @@
             // 
             panel2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             panel2.Controls.Add(ptcbAvatar);
-            panel2.Location = new Point(723, 2);
+            panel2.Location = new Point(720, 2);
             panel2.Name = "panel2";
             panel2.Size = new Size(337, 337);
             panel2.TabIndex = 1;
@@ -72,7 +72,6 @@
             ptcbAvatar.SizeMode = PictureBoxSizeMode.StretchImage;
             ptcbAvatar.TabIndex = 0;
             ptcbAvatar.TabStop = false;
-            ptcbAvatar.Click += pictureBox1_Click;
             // 
             // panel3
             // 
@@ -83,7 +82,7 @@
             panel3.Controls.Add(txbIP);
             panel3.Controls.Add(prcbCoolDown);
             panel3.Controls.Add(txbPlayerName);
-            panel3.Location = new Point(723, 347);
+            panel3.Location = new Point(720, 347);
             panel3.Name = "panel3";
             panel3.Size = new Size(337, 269);
             panel3.TabIndex = 2;
@@ -97,7 +96,6 @@
             label1.Size = new Size(325, 51);
             label1.TabIndex = 5;
             label1.Text = "5 in a line to win";
-            label1.Click += label1_Click;
             // 
             // btnLAN
             // 
@@ -119,7 +117,6 @@
             ptcbMark.SizeMode = PictureBoxSizeMode.StretchImage;
             ptcbMark.TabIndex = 3;
             ptcbMark.TabStop = false;
-            ptcbMark.Click += ptcbMark_Click;
             // 
             // txbIP
             // 
@@ -135,7 +132,6 @@
             prcbCoolDown.Name = "prcbCoolDown";
             prcbCoolDown.Size = new Size(174, 27);
             prcbCoolDown.TabIndex = 1;
-            prcbCoolDown.Click += prcbCoolDown_Click;
             // 
             // txbPlayerName
             // 
@@ -153,7 +149,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1065, 718);
+            ClientSize = new Size(1062, 705);
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(pnlChessBroad);

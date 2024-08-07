@@ -47,27 +47,6 @@ namespace GameCaro
         {
             EndGame();
         }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ptcbMark_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void prcbCoolDown_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void tmCoolDown_Tick(object sender, EventArgs e)
         {
             prcbCoolDown.PerformStep();

@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "D:\\New folder (2)\\GameCaro\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{03957381-2EF6-4488-B62C-C4E68CFEC5E7}|GameCaro\\GameCaro.csproj|d:\\new folder (2)\\gamecaro\\gamecaro\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{03957381-2EF6-4488-B62C-C4E68CFEC5E7}|GameCaro\\GameCaro.csproj|solutionrelative:gamecaro\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{03957381-2EF6-4488-B62C-C4E68CFEC5E7}|GameCaro\\GameCaro.csproj|d:\\new folder (2)\\gamecaro\\gamecaro\\cons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03957381-2EF6-4488-B62C-C4E68CFEC5E7}|GameCaro\\GameCaro.csproj|solutionrelative:gamecaro\\cons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{03957381-2EF6-4488-B62C-C4E68CFEC5E7}|GameCaro\\GameCaro.csproj|d:\\new folder (2)\\gamecaro\\gamecaro\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{03957381-2EF6-4488-B62C-C4E68CFEC5E7}|GameCaro\\GameCaro.csproj|solutionrelative:gamecaro\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{03957381-2EF6-4488-B62C-C4E68CFEC5E7}|GameCaro\\GameCaro.csproj|d:\\new folder (2)\\gamecaro\\gamecaro\\chessbroadmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{03957381-2EF6-4488-B62C-C4E68CFEC5E7}|GameCaro\\GameCaro.csproj|solutionrelative:gamecaro\\chessbroadmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{03957381-2EF6-4488-B62C-C4E68CFEC5E7}|GameCaro\\GameCaro.csproj|D:\\New folder (2)\\GameCaro\\gamecaro\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{03957381-2EF6-4488-B62C-C4E68CFEC5E7}|GameCaro\\GameCaro.csproj|solutionrelative:gamecaro\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{03957381-2EF6-4488-B62C-C4E68CFEC5E7}|GameCaro\\GameCaro.csproj|d:\\new folder (2)\\gamecaro\\gamecaro\\cons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{03957381-2EF6-4488-B62C-C4E68CFEC5E7}|GameCaro\\GameCaro.csproj|solutionrelative:gamecaro\\cons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{03957381-2EF6-4488-B62C-C4E68CFEC5E7}|GameCaro\\GameCaro.csproj|d:\\new folder (2)\\gamecaro\\gamecaro\\chessbroadmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03957381-2EF6-4488-B62C-C4E68CFEC5E7}|GameCaro\\GameCaro.csproj|solutionrelative:gamecaro\\chessbroadmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{03957381-2EF6-4488-B62C-C4E68CFEC5E7}|GameCaro\\GameCaro.csproj|d:\\new folder (2)\\gamecaro\\gamecaro\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -44,33 +44,34 @@
               "RelativeDocumentMoniker": "GameCaro\\Player.cs",
               "ToolTip": "D:\\New folder (2)\\GameCaro\\GameCaro\\Player.cs",
               "RelativeToolTip": "GameCaro\\Player.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAbAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwAYAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-06T07:57:26.793Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ChessBroadManager.cs",
               "DocumentMoniker": "D:\\New folder (2)\\GameCaro\\GameCaro\\ChessBroadManager.cs",
               "RelativeDocumentMoniker": "GameCaro\\ChessBroadManager.cs",
               "ToolTip": "D:\\New folder (2)\\GameCaro\\GameCaro\\ChessBroadManager.cs",
               "RelativeToolTip": "GameCaro\\ChessBroadManager.cs",
-              "ViewState": "AQIAAJQAAAAAAAAAAAAAAG4AAAAmAAAA",
+              "ViewState": "AQIAABABAAAAAAAAAAAqwG4AAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-06T06:58:49.165Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Cons.cs",
               "DocumentMoniker": "D:\\New folder (2)\\GameCaro\\GameCaro\\Cons.cs",
               "RelativeDocumentMoniker": "GameCaro\\Cons.cs",
               "ToolTip": "D:\\New folder (2)\\GameCaro\\GameCaro\\Cons.cs",
               "RelativeToolTip": "GameCaro\\Cons.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAvAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABAAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T06:58:27.279Z"
+              "WhenOpened": "2024-08-06T06:58:27.279Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -80,14 +81,14 @@
               "RelativeDocumentMoniker": "GameCaro\\Form1.cs",
               "ToolTip": "D:\\New folder (2)\\GameCaro\\GameCaro\\Form1.cs",
               "RelativeToolTip": "GameCaro\\Form1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAeAAAA",
+              "ViewState": "AQIAACMAAAAAAAAAAAAYwDAAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-06T06:49:21.33Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "D:\\New folder (2)\\GameCaro\\GameCaro\\Form1.cs",
               "RelativeDocumentMoniker": "GameCaro\\Form1.cs",
