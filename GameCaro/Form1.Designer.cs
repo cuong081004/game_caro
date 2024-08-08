@@ -172,7 +172,7 @@
             // 
             newGameToolStripMenuItem.Name = "newGameToolStripMenuItem";
             newGameToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.N;
-            newGameToolStripMenuItem.Size = new Size(224, 26);
+            newGameToolStripMenuItem.Size = new Size(218, 26);
             newGameToolStripMenuItem.Text = "New Game";
             newGameToolStripMenuItem.Click += newGameToolStripMenuItem_Click;
             // 
@@ -180,7 +180,7 @@
             // 
             undoToolStripMenuItem.Name = "undoToolStripMenuItem";
             undoToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.Z;
-            undoToolStripMenuItem.Size = new Size(224, 26);
+            undoToolStripMenuItem.Size = new Size(218, 26);
             undoToolStripMenuItem.Text = "Undo";
             undoToolStripMenuItem.Click += undoToolStripMenuItem_Click;
             // 
@@ -188,7 +188,7 @@
             // 
             quitToolStripMenuItem.Name = "quitToolStripMenuItem";
             quitToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.Q;
-            quitToolStripMenuItem.Size = new Size(224, 26);
+            quitToolStripMenuItem.Size = new Size(218, 26);
             quitToolStripMenuItem.Text = "Quit";
             quitToolStripMenuItem.Click += quitToolStripMenuItem_Click;
             // 

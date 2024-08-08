@@ -35,6 +35,7 @@ namespace GameCaro
         {
             tmCoolDown.Stop();
             pnlChessBroad.Enabled = false;
+            undoToolStripMenuItem.Enabled = false;
             MessageBox.Show("Kết thúc!");
         }
 
@@ -42,6 +43,7 @@ namespace GameCaro
         {
             prcbCoolDown.Value = 0;
             tmCoolDown.Stop();
+            undoToolStripMenuItem.Enabled = true;
 
             ChessBroad.DrawChessBoard();
         }
@@ -53,7 +55,7 @@ namespace GameCaro
 
         void Undo()
         {
-
+            ChessBroad.Undo();
         }
         private void ChessBroad_PlayerMarked(object? sender, EventArgs e)
         {
