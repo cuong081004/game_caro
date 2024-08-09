@@ -21,6 +21,9 @@ namespace GameCaro
         public Form1()
         {
             InitializeComponent();
+
+            Control.CheckForIllegalCrossThreadCalls = false;
+
             ChessBroad = new ChessBroadManager(pnlChessBroad, txbPlayerName, ptcbMark);
             ChessBroad.EndedGame += ChessBroad_EndedGame;
             ChessBroad.PlayerMarked += ChessBroad_PlayerMarked;
@@ -62,10 +65,15 @@ namespace GameCaro
         {
             ChessBroad.Undo();
         }
-        private void ChessBroad_PlayerMarked(object? sender, EventArgs e)
+        private void ChessBroad_PlayerMarked(object? sender, ButtonClickEvent e)
         {
             tmCoolDown.Start();
+            pnlChessBroad.Enabled = false ;
             prcbCoolDown.Value = 0;
+
+            socket.Send(new SocketData((int)SocketCommand.SEND_POINT, "", e.ClickedPoint));
+
+            Listen();
         }
 
         private void ChessBroad_EndedGame(object? sender, EventArgs e)
@@ -110,36 +118,15 @@ namespace GameCaro
 
             if (!socket.ConnectServer())
             {
+                socket.isServer = true;
+                pnlChessBroad.Enabled = true;
                 socket.CreateServer();
-                Thread listenThread = new Thread(() =>
-                {
-                    while (true) 
-                    {
-                        Thread.Sleep(500);
-                        try
-                        {
-                            Listen();
-                            break;
-                        }
-                        catch 
-                        {
-
-                        }
-                        
-                    }
-                });
-                listenThread.IsBackground = true;
-                listenThread.Start();
             }
             else
             {
-                Thread listenThread = new Thread(() =>
-                {
-                    Listen();
-                });
-                listenThread.IsBackground = true;
-                listenThread.Start();
-                socket.Send("thong tin tu clinet");
+                socket.isServer = false;
+                pnlChessBroad.Enabled = false;
+                Listen();
             }
 
            
@@ -158,11 +145,55 @@ namespace GameCaro
 
         void Listen()
         {
-            string data = (string)socket.Receive();
+            
+                Thread listenThread = new Thread(() =>
+                {
+                    try
+                    {
+                        SocketData data = (SocketData)socket.Receive();
 
-            MessageBox.Show(data);
+                        ProcessData(data);
+                    }
+                    catch { }
+                });
+                listenThread.IsBackground = true;
+                listenThread.Start();
+            
         }
 
+        private void ProcessData(SocketData data)
+        {
+            switch(data.Command)
+            {
+                case (int)SocketCommand.NOTIFY:
+                    MessageBox.Show(data.Message);
+                    break;
+                case (int)SocketCommand.NEW_GAME:
+                    break;
+                case (int)SocketCommand.SEND_POINT:
+                    this.Invoke((MethodInvoker)(() =>
+                    {
+                        prcbCoolDown.Value = 0;
+                        pnlChessBroad.Enabled = true;
+                        tmCoolDown.Start();
+                        ChessBroad.OtherPlayerMark(data.Point);
+                    }));
+                    break;
+                case (int)SocketCommand.UNDO:
+                    MessageBox.Show(data.Message);
+                    break;
+                case (int)SocketCommand.END_GAME:
+                    MessageBox.Show(data.Message);
+                    break;
+                case (int)SocketCommand.QUIT:
+                    MessageBox.Show(data.Message);
+                    break;
+                default:
+                    break;
+            }
+
+            Listen();
+        }
         #endregion       
     }
 }
