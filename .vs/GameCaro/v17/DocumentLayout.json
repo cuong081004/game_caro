@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "D:\\New folder (2)\\GameCaro\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{03957381-2EF6-4488-B62C-C4E68CFEC5E7}|GameCaro\\GameCaro.csproj|d:\\new folder (2)\\gamecaro\\gamecaro\\chessbroadmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{03957381-2EF6-4488-B62C-C4E68CFEC5E7}|GameCaro\\GameCaro.csproj|solutionrelative:gamecaro\\chessbroadmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{03957381-2EF6-4488-B62C-C4E68CFEC5E7}|GameCaro\\GameCaro.csproj|d:\\new folder (2)\\gamecaro\\gamecaro\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{03957381-2EF6-4488-B62C-C4E68CFEC5E7}|GameCaro\\GameCaro.csproj|solutionrelative:gamecaro\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{03957381-2EF6-4488-B62C-C4E68CFEC5E7}|GameCaro\\GameCaro.csproj|d:\\new folder (2)\\gamecaro\\gamecaro\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{03957381-2EF6-4488-B62C-C4E68CFEC5E7}|GameCaro\\GameCaro.csproj|d:\\new folder (2)\\gamecaro\\gamecaro\\socketmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03957381-2EF6-4488-B62C-C4E68CFEC5E7}|GameCaro\\GameCaro.csproj|solutionrelative:gamecaro\\socketmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03957381-2EF6-4488-B62C-C4E68CFEC5E7}|GameCaro\\GameCaro.csproj|D:\\New folder (2)\\GameCaro\\gamecaro\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{03957381-2EF6-4488-B62C-C4E68CFEC5E7}|GameCaro\\GameCaro.csproj|solutionrelative:gamecaro\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03957381-2EF6-4488-B62C-C4E68CFEC5E7}|GameCaro\\GameCaro.csproj|d:\\new folder (2)\\gamecaro\\gamecaro\\chessbroadmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03957381-2EF6-4488-B62C-C4E68CFEC5E7}|GameCaro\\GameCaro.csproj|solutionrelative:gamecaro\\chessbroadmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{03957381-2EF6-4488-B62C-C4E68CFEC5E7}|GameCaro\\GameCaro.csproj|d:\\new folder (2)\\gamecaro\\gamecaro\\playinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,7 +46,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
+              "Title": "SocketManager.cs",
+              "DocumentMoniker": "D:\\New folder (2)\\GameCaro\\GameCaro\\SocketManager.cs",
+              "RelativeDocumentMoniker": "GameCaro\\SocketManager.cs",
+              "ToolTip": "D:\\New folder (2)\\GameCaro\\GameCaro\\SocketManager.cs",
+              "RelativeToolTip": "GameCaro\\SocketManager.cs",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAWwFEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T13:12:09.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "PlayInfo.cs",
               "DocumentMoniker": "D:\\New folder (2)\\GameCaro\\GameCaro\\PlayInfo.cs",
               "RelativeDocumentMoniker": "GameCaro\\PlayInfo.cs",
@@ -50,12 +67,11 @@
               "RelativeToolTip": "GameCaro\\PlayInfo.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-07T14:10:09.866Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-07T14:10:09.866Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Player.cs",
               "DocumentMoniker": "D:\\New folder (2)\\GameCaro\\GameCaro\\Player.cs",
               "RelativeDocumentMoniker": "GameCaro\\Player.cs",
@@ -67,20 +83,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "ChessBroadManager.cs",
               "DocumentMoniker": "D:\\New folder (2)\\GameCaro\\GameCaro\\ChessBroadManager.cs",
               "RelativeDocumentMoniker": "GameCaro\\ChessBroadManager.cs",
               "ToolTip": "D:\\New folder (2)\\GameCaro\\GameCaro\\ChessBroadManager.cs",
               "RelativeToolTip": "GameCaro\\ChessBroadManager.cs",
-              "ViewState": "AQIAAFwAAAAAAAAAAAA/wG4AAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAG4AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-06T06:58:49.165Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Cons.cs",
               "DocumentMoniker": "D:\\New folder (2)\\GameCaro\\GameCaro\\Cons.cs",
               "RelativeDocumentMoniker": "GameCaro\\Cons.cs",
@@ -92,13 +108,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form1.cs",
               "DocumentMoniker": "D:\\New folder (2)\\GameCaro\\GameCaro\\Form1.cs",
               "RelativeDocumentMoniker": "GameCaro\\Form1.cs",
               "ToolTip": "D:\\New folder (2)\\GameCaro\\GameCaro\\Form1.cs",
               "RelativeToolTip": "GameCaro\\Form1.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAUwCYAAAApAAAA",
+              "ViewState": "AQIAAF4AAAAAAAAAAAA2wG0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-06T06:49:21.33Z",
               "EditorCaption": ""

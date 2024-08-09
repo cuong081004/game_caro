@@ -112,6 +112,7 @@
             btnLAN.TabIndex = 4;
             btnLAN.Text = "LAN";
             btnLAN.UseVisualStyleBackColor = true;
+            btnLAN.Click += btnLAN_Click;
             // 
             // ptcbMark
             // 
@@ -206,6 +207,7 @@
             Name = "Form1";
             Text = "Game Caro";
             FormClosing += Form1_FormClosing;
+            Shown += Form1_Shown;
             panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)ptcbAvatar).EndInit();
             panel3.ResumeLayout(false);
