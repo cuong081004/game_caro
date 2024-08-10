@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -202,7 +203,21 @@ namespace GameCaro
         public bool Undo()
         {
             if (PlayTimeLine.Count <= 0)
-                return false; 
+                return false;
+
+            bool isUndo1 = UndoAStep();
+            bool isUndo2 = UndoAStep();
+
+            PlayInfo oldPoint = PlayTimeLine.Peek();
+            CurrentPlayer = oldPoint.CurrentPlayer == 1 ? 0 : 1;
+
+            return isUndo1 && isUndo2;
+        }
+
+        private bool UndoAStep()
+        {
+            if (PlayTimeLine.Count <= 0)
+                return false;
 
             PlayInfo oldPoint = PlayTimeLine.Pop();
             Button btn = Matrix[oldPoint.Point.Y][oldPoint.Point.X];
@@ -216,7 +231,6 @@ namespace GameCaro
             else
             {
                 oldPoint = PlayTimeLine.Peek();
-                CurrentPlayer = oldPoint.CurrentPlayer == 1 ? 0 : 1;
             }
 
             ChangePlayer();
